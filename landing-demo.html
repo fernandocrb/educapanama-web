@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda una demo gratis — EduPage y aSc Horarios para tu colegio | EducaPanamá</title>
+  <meta name="description" content="Moderniza tu colegio con EduPage y aSc Horarios: boletines con QR, asistencia en tiempo real y horarios automáticos. Agenda una demostración gratis de 30 minutos, con soporte local en Panamá.">
+  <link rel="canonical" href="https://educapanama.net/landing-demo.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Agenda una demo gratis — EducaPanamá">
+  <meta property="og:description" content="EduPage y aSc Horarios con capacitación y soporte local en Panamá. Demostración gratis de 30 minutos, sin compromiso.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://educapanama.net/landing-demo.html">
+  <meta property="og:locale" content="es_PA">
+  <meta property="og:image" content="https://educapanama.net/assets/og-educapanama.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#agendar">Saltar al formulario</a>
+
+<!-- Header simplificado: logo + un solo CTA -->
+<header class="site-header header-landing">
+  <div class="container nav-wrap">
+    <a class="brand" href="index.html">Educa<span>Panamá</span></a>
+    <a class="btn btn-primario nav-cta" href="#agendar">Agenda tu demo gratis</a>
+  </div>
+</header>
+
+<!-- HERO con formulario -->
+<section class="hero hero-landing">
+  <div class="container hero-grid">
+    <div>
+      <span class="chip-confianza"><span class="punto"></span> Más de 30 colegios en Panamá ya lo usan</span>
+      <h1>Moderniza la gestión de tu colegio en una sola plataforma</h1>
+      <p class="subtitulo">Boletines con código QR, asistencia que avisa a los padres al instante y horarios generados en minutos. Con <strong>EduPage</strong> y <strong>aSc Horarios</strong>, y capacitación y soporte local en Panamá.</p>
+      <ul class="hero-lista">
+        <li>Demostración gratis de 30 minutos, sin compromiso</li>
+        <li>Te la damos con datos de un colegio real, en español</li>
+        <li>Al final, una propuesta clara y sin letra pequeña</li>
+      </ul>
+    </div>
+
+    <!-- Formulario (usa el mismo JS: abre WhatsApp con el mensaje armado) -->
+    <div class="form-card" id="agendar">
+      <form class="form-contacto" id="form-contacto" style="box-shadow:none;border:none;padding:0"
+            action="https://mkt.educapanama.net/form/submit?formId=2" method="post"
+            enctype="multipart/form-data" target="mautic-iframe">
+        <h3>Solicita tu demostración</h3>
+        <p style="color:var(--texto-suave);font-size:0.9rem;margin-bottom:0.4rem">Registramos tus datos y se abre WhatsApp con tu mensaje listo.</p>
+        <div class="form-fila">
+          <div class="campo">
+            <label for="nombre">Nombre <span class="req">*</span></label>
+            <input type="text" id="nombre" name="mauticform[nombre]" required autocomplete="name">
+          </div>
+          <div class="campo">
+            <label for="cargo">Cargo <span class="req">*</span></label>
+            <input type="text" id="cargo" name="mauticform[cargo]" placeholder="Director(a)…" required>
+          </div>
+        </div>
+        <div class="campo">
+          <label for="colegio">Colegio o institución <span class="req">*</span></label>
+          <input type="text" id="colegio" name="mauticform[institucion]" required autocomplete="organization">
+        </div>
+        <div class="campo">
+          <label for="tipo">Tipo de institución <span class="req">*</span></label>
+          <select id="tipo" name="mauticform[tipo_de_institucion]" required>
+            <option value="">Selecciona una opción</option>
+            <option value="universidad">Universidad</option>
+            <option value="instituto_tecnico">Instituto Técnico</option>
+            <option value="colegio">Colegio</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+        <div class="form-fila">
+          <div class="campo">
+            <label for="email">Correo <span class="req">*</span></label>
+            <input type="email" id="email" name="mauticform[email]" required autocomplete="email">
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono / WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="telefono" name="mauticform[telefono__whatsapp]" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="producto">¿Qué te interesa? <span class="req">*</span></label>
+          <select id="producto" name="mauticform[producto_de_interes]" required>
+            <option value="">Selecciona una opción</option>
+            <option value="EduPage (gestión escolar)">EduPage (gestión escolar)</option>
+            <option value="aSc Horarios">aSc Horarios</option>
+            <option value="EduPage + aSc Horarios">EduPage + aSc Horarios</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primario">Agendar mi demo por WhatsApp</button>
+        <p class="nota-form">Te contactamos para coordinar día y hora.</p>
+        <!-- Campos internos de Mautic -->
+        <input type="hidden" name="mauticform[formId]" value="2">
+        <input type="hidden" name="mauticform[formName]" value="educapanamanet">
+        <input type="hidden" name="mauticform[return]" value="">
+        <input type="hidden" name="mauticform[submit]" value="1">
+      </form>
+      <iframe name="mautic-iframe" title="Registro" style="display:none" aria-hidden="true"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- EL PROBLEMA -->
+<section class="seccion seccion-alt">
+  <div class="container">
+    <div class="encabezado-seccion centrado">
+      <span class="kicker">Lo que pasa hoy</span>
+      <h2>La gestión manual cuesta tiempo, errores y confianza</h2>
+    </div>
+    <div class="grid-3">
+      <div class="stat">
+        <div class="big">Semanas</div>
+        <p>Es lo que tarda armar a mano el horario del colegio, y aun así quedan choques de docentes y aulas.</p>
+      </div>
+      <div class="stat">
+        <div class="big">Llamadas <span class="u">y grupos</span></div>
+        <p>Los padres se enteran tarde de notas, ausencias y avisos, entre cadenas de WhatsApp desordenadas.</p>
+      </div>
+      <div class="stat">
+        <div class="big">Boletines <span class="u">falsificables</span></div>
+        <p>Un boletín impreso sin verificación puede alterarse. Nadie puede confirmar en el momento si es auténtico.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LA SOLUCIÓN -->
+<section class="seccion">
+  <div class="container">
+    <div class="encabezado-seccion centrado">
+      <span class="kicker">La solución</span>
+      <h2>Dos herramientas de clase mundial, con acompañamiento panameño</h2>
+    </div>
+    <div class="grid-2">
+      <article class="tarjeta tarjeta-producto">
+        <span class="etiqueta-producto">Gestión escolar</span>
+        <h3>EduPage</h3>
+        <p>Calificaciones, asistencia, comunicación y app móvil para padres, docentes y estudiantes. Todo en un solo lugar.</p>
+        <ul>
+          <li>Boletines con código QR de verificación</li>
+          <li>Asistencia con aviso automático a los padres</li>
+          <li>App móvil que los padres realmente usan</li>
+        </ul>
+      </article>
+      <article class="tarjeta tarjeta-producto">
+        <span class="etiqueta-producto">Horarios escolares</span>
+        <h3>aSc Horarios</h3>
+        <p>El horario completo del colegio generado en minutos, evaluando millones de combinaciones sin choques.</p>
+        <ul>
+          <li>Generación automática y equilibrada</li>
+          <li>Sustituciones de docentes en segundos</li>
+          <li>Capacitación incluida con nuestro equipo</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIADOR: BOLETÍN QR -->
+<section class="seccion seccion-alt">
+  <div class="container">
+    <div class="diferenciador">
+      <div>
+        <span class="kicker">Exclusivo con EducaPanamá</span>
+        <h2>Boletines con código QR para verificar su autenticidad</h2>
+        <p>Cada boletín lleva un QR único. Un padre, otra escuela o una universidad lo escanea con el celular y confirma al instante que el documento es genuino y no fue alterado.</p>
+        <ul>
+          <li>Documentos imposibles de falsificar</li>
+          <li>Seguridad y confianza para el colegio y los padres</li>
+          <li>Verificación en segundos, desde cualquier celular</li>
+        </ul>
+      </div>
+      <div class="diferenciador-visual">
+        <svg class="mockup-sombra" viewBox="0 0 260 340" width="230" role="img" aria-label="Boletín de calificaciones con código QR verificado">
+          <rect x="10" y="10" width="240" height="320" rx="10" fill="#ffffff"/>
+          <rect x="10" y="10" width="240" height="54" rx="10" fill="#e8f0fe"/>
+          <rect x="10" y="44" width="240" height="20" fill="#e8f0fe"/>
+          <circle cx="38" cy="37" r="13" fill="#1e4fa3"/>
+          <rect x="60" y="26" width="120" height="10" rx="5" fill="#0f2d5c"/>
+          <rect x="60" y="42" width="90" height="8" rx="4" fill="#5b6472"/>
+          <rect x="28" y="82" width="204" height="14" rx="4" fill="#1e4fa3"/>
+          <g fill="#c3cbd8">
+            <rect x="28" y="106" width="130" height="9" rx="4"/><rect x="188" y="106" width="44" height="9" rx="4" fill="#1d9e6f"/>
+            <rect x="28" y="124" width="110" height="9" rx="4"/><rect x="188" y="124" width="44" height="9" rx="4" fill="#1d9e6f"/>
+            <rect x="28" y="142" width="140" height="9" rx="4"/><rect x="188" y="142" width="44" height="9" rx="4" fill="#f2790f"/>
+            <rect x="28" y="160" width="100" height="9" rx="4"/><rect x="188" y="160" width="44" height="9" rx="4" fill="#1d9e6f"/>
+            <rect x="28" y="178" width="125" height="9" rx="4"/><rect x="188" y="178" width="44" height="9" rx="4" fill="#1d9e6f"/>
+          </g>
+          <g transform="translate(28, 210)">
+            <rect x="0" y="0" width="84" height="84" rx="6" fill="#0f2d5c"/>
+            <rect x="6" y="6" width="72" height="72" rx="3" fill="#ffffff"/>
+            <g fill="#0f2d5c">
+              <rect x="10" y="10" width="20" height="20"/><rect x="14" y="14" width="12" height="12" fill="#ffffff"/><rect x="17" y="17" width="6" height="6"/>
+              <rect x="54" y="10" width="20" height="20"/><rect x="58" y="14" width="12" height="12" fill="#ffffff"/><rect x="61" y="17" width="6" height="6"/>
+              <rect x="10" y="54" width="20" height="20"/><rect x="14" y="58" width="12" height="12" fill="#ffffff"/><rect x="17" y="61" width="6" height="6"/>
+              <rect x="36" y="10" width="5" height="5"/><rect x="44" y="16" width="5" height="5"/><rect x="36" y="24" width="5" height="5"/>
+              <rect x="36" y="36" width="5" height="5"/><rect x="46" y="36" width="5" height="5"/><rect x="56" y="40" width="5" height="5"/>
+              <rect x="10" y="36" width="5" height="5"/><rect x="20" y="40" width="5" height="5"/><rect x="28" y="36" width="5" height="5"/>
+              <rect x="64" y="36" width="5" height="5"/><rect x="40" y="46" width="5" height="5"/><rect x="50" y="52" width="5" height="5"/>
+              <rect x="60" y="58" width="5" height="5"/><rect x="40" y="60" width="5" height="5"/><rect x="48" y="66" width="5" height="5"/>
+              <rect x="66" y="66" width="6" height="6"/><rect x="36" y="70" width="5" height="5"/>
+            </g>
+          </g>
+          <g transform="translate(132, 228)">
+            <circle cx="24" cy="24" r="24" fill="#1d9e6f"/>
+            <path d="M13 24.5l7.5 7.5L36 16" stroke="#ffffff" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+          <rect x="132" y="286" width="100" height="9" rx="4" fill="#1d9e6f"/>
+          <rect x="132" y="302" width="76" height="7" rx="3" fill="#c3cbd8"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ + TESTIMONIO -->
+<section class="seccion">
+  <div class="container">
+    <div class="encabezado-seccion centrado">
+      <span class="kicker">¿Por qué EducaPanamá?</span>
+      <h2>La tecnología es mundial; el acompañamiento, panameño</h2>
+    </div>
+    <div class="grid-4">
+      <div class="feature">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="#1e4fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <h3>Soporte local</h3>
+        <p>En español, por WhatsApp y en persona. Sin tickets a otro continente.</p>
+      </div>
+      <div class="feature">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="#1e4fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>Capacitación incluida</h3>
+        <p>Entrenamos a tu personal con talleres prácticos. No te dejamos solo con el software.</p>
+      </div>
+      <div class="feature">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="#1e4fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+        <h3>Probado en el mundo</h3>
+        <p>Cientos de miles de escuelas en más de 170 países usan estas soluciones.</p>
+      </div>
+      <div class="feature">
+        <div class="icono"><svg viewBox="0 0 24 24" fill="none" stroke="#1e4fa3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg></div>
+        <h3>Implementación guiada</h3>
+        <p>Diagnóstico, configuración y arranque acompañado hasta que todo funcione.</p>
+      </div>
+    </div>
+
+    <div class="testimonio" style="max-width:680px;margin:2.5rem auto 0;text-align:center;align-items:center">
+      <span class="comilla">“</span>
+      <blockquote style="font-size:1.15rem">Es lo mejor que le ha pasado a esta escuela…</blockquote>
+      <div><div class="autor">Padre de familia</div><div class="cargo">Colegio que usa EduPage en Panamá</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="seccion seccion-alt">
+  <div class="container">
+    <div class="encabezado-seccion centrado">
+      <span class="kicker">Dudas frecuentes</span>
+      <h2>Respuestas rápidas antes de la demo</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>¿La demostración tiene algún costo?</summary>
+        <p>No. La demo de 30 minutos es gratis y sin compromiso. Te mostramos la plataforma con datos de un colegio real y respondemos todas tus preguntas.</p>
+      </details>
+      <details>
+        <summary>¿Tenemos que cambiar todo nuestro proceso actual?</summary>
+        <p>No de golpe. Empezamos por lo que más te urge (por ejemplo, boletines o asistencia) y vamos sumando el resto. Te acompañamos en cada paso.</p>
+      </details>
+      <details>
+        <summary>¿Ustedes capacitan a nuestro personal?</summary>
+        <p>Sí. La capacitación va incluida: talleres prácticos para directivos, docentes y personal administrativo, en español y en Panamá.</p>
+      </details>
+      <details>
+        <summary>¿Sirve para colegios pequeños?</summary>
+        <p>Sí. Trabajamos con instituciones de todos los tamaños, desde centros educativos básicos hasta institutos técnicos y universidades.</p>
+      </details>
+      <details>
+        <summary>¿Cómo funcionan los boletines con QR?</summary>
+        <p>Cada boletín se emite con un código QR único. Al escanearlo, cualquiera confirma en segundos que el documento es auténtico y no fue alterado.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="seccion seccion-azul cta-final">
+  <div class="container">
+    <h2>Agenda tu demostración gratis hoy</h2>
+    <p class="subtitulo">30 minutos, en línea, a la hora que te quede. Sin compromiso y con una propuesta clara al final.</p>
+    <div class="hero-acciones" style="justify-content:center">
+      <a class="btn btn-primario" href="#agendar">Llenar el formulario</a>
+      <a class="btn btn-blanco" href="https://wa.me/50763304392?text=Hola,%20quiero%20agendar%20una%20demo%20gratis%20de%20sus%20soluciones%20para%20mi%20colegio.">Escribir por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-legal" style="border-top:none;padding-top:0">
+      <span>© <span id="anio-actual">2026</span> EducaPanamá · <a href="index.html">educapanama.net</a> · ventas@educapanama.net</span>
+      <span>WhatsApp: <a href="https://wa.me/50763304392">+507 6330-4392</a> · Hecho en Panamá</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Barra fija de CTA (visible en móvil) -->
+<div class="sticky-cta">
+  <a class="btn btn-primario" href="#agendar">Agendar demo</a>
+  <a class="btn btn-wa" href="https://wa.me/50763304392?text=Hola,%20quiero%20agendar%20una%20demo%20gratis%20de%20sus%20soluciones%20para%20mi%20colegio." target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
