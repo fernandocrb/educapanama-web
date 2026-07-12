@@ -1,0 +1,9 @@
+{
+  // Configuración de Cloudflare para servir el sitio como archivos estáticos.
+  // No hay "build": Cloudflare sube tal cual los archivos de esta carpeta.
+  "name": "educapanama-web",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./"
+  }
+}
