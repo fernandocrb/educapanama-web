@@ -2,3 +2,7 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Cloudflare Wrangler (caché/config local, no debe subirse ni servirse)
+.wrangler/
+node_modules/
