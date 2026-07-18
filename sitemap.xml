@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://educapanama.net/</loc><priority>1.0</priority></url>
-  <url><loc>https://educapanama.net/edupage.html</loc><priority>0.9</priority></url>
-  <url><loc>https://educapanama.net/asc-horarios.html</loc><priority>0.9</priority></url>
-  <url><loc>https://educapanama.net/clientes.html</loc><priority>0.7</priority></url>
-  <url><loc>https://educapanama.net/servicios.html</loc><priority>0.6</priority></url>
-  <url><loc>https://educapanama.net/contacto.html</loc><priority>0.8</priority></url>
-  <url><loc>https://educapanama.net/landing-demo.html</loc><priority>0.9</priority></url>
+  <url><loc>https://educapanama.net/edupage</loc><priority>0.9</priority></url>
+  <url><loc>https://educapanama.net/asc-horarios</loc><priority>0.9</priority></url>
+  <url><loc>https://educapanama.net/clientes</loc><priority>0.7</priority></url>
+  <url><loc>https://educapanama.net/servicios</loc><priority>0.6</priority></url>
+  <url><loc>https://educapanama.net/contacto</loc><priority>0.8</priority></url>
+  <url><loc>https://educapanama.net/landing-demo</loc><priority>0.9</priority></url>
 </urlset>
