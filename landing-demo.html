@@ -18,6 +18,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <!-- Consentimiento de cookies: decide si se carga Google Tag Manager. Ver assets/js/cookies.js -->
+  <script src="assets/js/cookies.js"></script>
 </head>
 <body>
 
@@ -47,7 +49,7 @@
 
     <!-- Formulario (usa el mismo JS: abre WhatsApp con el mensaje armado) -->
     <div class="form-card" id="agendar">
-      <form class="form-contacto" id="form-contacto" style="box-shadow:none;border:none;padding:0"
+      <form class="form-contacto" id="form-contacto" data-origen="demo" style="box-shadow:none;border:none;padding:0"
             action="https://mkt.educapanama.net/form/submit?formId=2" method="post"
             enctype="multipart/form-data" target="mautic-iframe">
         <h3>Solicita tu demostración</h3>

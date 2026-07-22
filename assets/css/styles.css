@@ -710,3 +710,39 @@ h3 { font-size: 1.2rem; }
   .sticky-cta { display: flex; }
   .hero-landing .whatsapp-flotante { display: none; }
 }
+
+/* ---------- Aviso de cookies (Ley 81) — ver assets/js/cookies.js ---------- */
+.aviso-cookies {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 210;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 18px 22px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 20px;
+  background: var(--blanco);
+  color: var(--texto);
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra-alta);
+}
+.aviso-cookies p { flex: 1 1 300px; margin: 0; font-size: 0.95rem; color: var(--texto-suave); }
+.aviso-cookies a { color: var(--azul); text-decoration: underline; }
+.aviso-cookies-botones { display: flex; gap: 10px; flex: none; }
+.aviso-cookies .btn { padding: 10px 18px; font-size: 0.95rem; }
+.aviso-cookies .btn:hover { transform: none; }
+
+/* El botón flotante de WhatsApp vive abajo a la derecha: en pantallas
+   estrechas el aviso se sube para no taparlo. */
+@media (max-width: 1000px) {
+  .aviso-cookies { bottom: 92px; padding: 16px; }
+}
+@media (max-width: 560px) {
+  .aviso-cookies-botones { width: 100%; }
+  .aviso-cookies-botones .btn { flex: 1; justify-content: center; }
+}

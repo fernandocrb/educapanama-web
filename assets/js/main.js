@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Cada dato (nombre, producto, mensaje, etc.) tiene su propio campo en
         // Mautic. Abrimos WhatsApp y mostramos gracias. NO hacemos preventDefault:
         // el envío nativo va a Mautic dentro del iframe oculto.
+        avisarConversion(form);
         window.open(urlWa, "_blank");
         mostrarGracias(form);
       } else {
@@ -51,6 +52,23 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         window.open(urlWa, "_blank");
       }
+    });
+  }
+
+  // Avisa a Google Tag Manager de que se envió un lead. A diferencia de otros
+  // sitios nuestros, aquí el visitante NO se va a una página de gracias (el
+  // envío viaja a Mautic en un iframe oculto y se abre WhatsApp), así que no
+  // hay una URL que Analytics pueda usar para detectar la conversión: hay que
+  // empujar el evento a mano. En GTM esto se recoge con un activador de
+  // "evento personalizado" llamado lead_enviado.
+  //
+  // dataLayer solo existe si el visitante aceptó las cookies (ver cookies.js).
+  // Si no aceptó, este push no hace nada y no se rastrea — que es lo correcto.
+  function avisarConversion(form) {
+    if (!window.dataLayer) return;
+    window.dataLayer.push({
+      event: "lead_enviado",
+      origen: form.getAttribute("data-origen") || "contacto"
     });
   }
 
